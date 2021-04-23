@@ -17,6 +17,9 @@ class Category extends Model
 {
     use HasFactory;
 
+    /**
+     * @var string[]
+     */
     protected $fillable = ['id', 'name', 'description'];
 
     /**

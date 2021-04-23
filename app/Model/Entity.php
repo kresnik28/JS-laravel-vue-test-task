@@ -24,12 +24,19 @@ class Entity
         return Model::class;
     }
 
+    /**
+     * Entity constructor.
+     * @throws \Illuminate\Contracts\Container\BindingResolutionException
+     */
     public function __construct()
     {
         $model = $this->setModel();
         $this->model = app()->make($model);
     }
 
+    /**
+     * @return mixed
+     */
     public function getAll()
     {
         return $this->model->get();
@@ -53,7 +60,7 @@ class Entity
     }
 
     /**
-     *
+     * @param $id
      */
     public function delete($id)
     {

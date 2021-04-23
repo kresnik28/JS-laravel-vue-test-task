@@ -11,11 +11,17 @@ use App\Modules\Item\Models\Item;
  */
 class ItemEntity extends Entity
 {
+    /**
+     * @return string
+     */
     public function setModel(): string
     {
         return Item::class;
     }
 
+    /**
+     * @param $data
+     */
     public function create($data)
     {
         /** @var Item $item */

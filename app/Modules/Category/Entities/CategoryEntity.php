@@ -17,18 +17,27 @@ class CategoryEntity extends Entity
      */
     protected ItemEntity $itemEntity;
 
-
+    /**
+     * @return string
+     */
     public function setModel(): string
     {
         return Category::class;
     }
 
+    /**
+     * CategoryEntity constructor.
+     * @param ItemEntity $itemEntity
+     */
     public function __construct(ItemEntity $itemEntity)
     {
         parent::__construct();
         $this->itemEntity = $itemEntity;
     }
 
+    /**
+     * @param $data
+     */
     public function create($data)
     {
         /** @var Category $category */
@@ -55,6 +64,10 @@ class CategoryEntity extends Entity
         $this->attachItems($category->id, $data['items']);
     }
 
+    /**
+     * @param $categoryId
+     * @param $itemIds
+     */
     private function attachItems($categoryId, $itemIds)
     {
         $this->itemEntity->model->whereIn('id', $itemIds)->update(['category_id' => $categoryId]);
