@@ -4,6 +4,10 @@ namespace App\Modules\Category\Validators;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+/**
+ * Class CategoryValidator
+ * @package App\Modules\Category\Validators
+ */
 class CategoryValidator extends FormRequest
 {
     /**

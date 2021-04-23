@@ -6,6 +6,10 @@ use App\Modules\Category\Resources\CategoryResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Facades\Storage;
 
+/**
+ * Class ItemResource
+ * @package App\Modules\Item\Resources
+ */
 class ItemResource extends JsonResource
 {
     /**

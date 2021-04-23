@@ -5,6 +5,10 @@ namespace App\Modules\Category\Resources;
 use App\Modules\Item\Resources\ItemResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
+/**
+ * Class CategoryResource
+ * @package App\Modules\Category\Resources
+ */
 class CategoryResource extends JsonResource
 {
     /**

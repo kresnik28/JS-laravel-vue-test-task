@@ -7,6 +7,10 @@ use App\Modules\Item\Factories\ItemFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Class Item
+ * @package App\Modules\Item\Models
+ */
 class Item extends Model
 {
     use HasFactory;

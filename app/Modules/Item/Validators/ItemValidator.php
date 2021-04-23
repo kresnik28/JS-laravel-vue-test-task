@@ -3,6 +3,10 @@ namespace App\Modules\Item\Validators;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+/**
+ * Class ItemValidator
+ * @package App\Modules\Item\Validators
+ */
 class ItemValidator extends FormRequest
 {
     /**
